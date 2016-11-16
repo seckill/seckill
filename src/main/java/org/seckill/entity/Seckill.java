@@ -10,7 +10,7 @@ public class Seckill {
 	
 	private int number;
 	
-	private Date tartTime;
+	private Date startTime;
 	
 	private Date endTime;
 	
@@ -40,12 +40,12 @@ public class Seckill {
 		this.number = number;
 	}
 
-	public Date getTartTime() {
-		return tartTime;
+	public Date getStartTime() {
+		return startTime;
 	}
 
-	public void setTartTime(Date tartTime) {
-		this.tartTime = tartTime;
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
 	}
 
 	public Date getEndTime() {
@@ -66,8 +66,10 @@ public class Seckill {
 
 	@Override
 	public String toString() {
-		return "seckill [seckillId=" + seckillId + ", name=" + name + ", number=" + number + ", tartTime=" + tartTime
+		return "Seckill [seckillId=" + seckillId + ", name=" + name + ", number=" + number + ", startTime=" + startTime
 				+ ", endTime=" + endTime + ", createTime=" + createTime + "]";
 	}
+
+
 	 
 }

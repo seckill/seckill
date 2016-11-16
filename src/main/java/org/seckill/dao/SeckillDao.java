@@ -3,6 +3,7 @@ import org.springframework.test.context.jdbc.Sql;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
 import org.seckill.entity.Seckill;
 
 /**
@@ -31,7 +32,7 @@ public interface SeckillDao {
 	 * @param limit
 	 * @return
 	 */
-	List<Seckill> queryAll(int offet,int limit);
+	List<Seckill> queryAll(@Param("offet")int offet,@Param("limit")int limit);
 	//offet 偏移量
 	//limit 在偏移量之后取多少条记录
 }
