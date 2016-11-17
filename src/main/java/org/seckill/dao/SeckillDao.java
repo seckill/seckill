@@ -32,7 +32,7 @@ public interface SeckillDao {
 	 * @param limit
 	 * @return
 	 */
-	List<Seckill> queryAll(@Param("offet")int offet,@Param("limit")int limit);
+	List<Seckill> queryAll(@Param("offset")int offet,@Param("limit")int limit);
 	//offet 偏移量
 	//limit 在偏移量之后取多少条记录
 }

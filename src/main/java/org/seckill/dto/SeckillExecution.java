@@ -19,6 +19,13 @@ public class SeckillExecution {
 	private SuccessKilled successKilled;
 	
 	
+	@Override
+	public String toString() {
+		return "SeckillExecution [seckillId=" + seckillId + ", start=" + start + ", stateInfo=" + stateInfo
+				+ ", successKilled=" + successKilled + "]";
+	}
+
+
 	public SeckillExecution(long seckillId, SeckillStatEnum statEnum, SuccessKilled successKilled) {
 		this.seckillId = seckillId;
 		this.start = statEnum.getState();
